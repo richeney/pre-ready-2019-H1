@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "envPrefixName": {
-      "value": "enter a 5 charactor value here all lowercase"
+      "value": "rpjc"
     },
     "username": {
       "value": "vmadmin"
@@ -11,7 +11,7 @@
     "password": {
       "reference": {
         "keyVault": {
-          "id": "<paste your vault resourceId here>"
+          "id": "/subscriptions/2ca40be1-7e80-4f2b-92f7-06b2123a68cc/resourceGroups/rpjc/providers/Microsoft.KeyVault/vaults/rpjcMonWorkshopVault"
         },
         "secretName": "VMPassword"
       }

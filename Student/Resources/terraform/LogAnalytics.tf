@@ -20,6 +20,6 @@ resource "azurerm_log_analytics_solution" "containerInsights" {
   }
 
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 }
