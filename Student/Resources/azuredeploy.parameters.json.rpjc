@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "envPrefixName": {
+      "value": "rpjc"
+    },
+    "username": {
+      "value": "vmadmin"
+    },
+    "password": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/2ca40be1-7e80-4f2b-92f7-06b2123a68cc/resourceGroups/rpjc/providers/Microsoft.KeyVault/vaults/rpjcMonWorkshopVault"
+        },
+        "secretName": "VMPassword"
+      }
+    }
+  }
+}
